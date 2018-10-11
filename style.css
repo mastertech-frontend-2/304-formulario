@@ -1,0 +1,105 @@
+body {
+  width: 70vw;
+  
+  background-color: lightgoldenrodyellow;
+  
+  font-family: sans-serif;
+  
+  margin: 0 auto;
+}
+
+header {
+  width: 100vw;
+  height: 15vh;
+  
+  background-color: blueviolet;
+  
+  position: fixed;
+  top: 0;
+  left: 0;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+form {
+  margin-top: 15vh;
+}
+
+section {
+  border: 2px solid blueviolet;
+  
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.linha {
+  display: flex;
+  justify-content: flex-start;
+
+  width: 100%;
+
+  margin: 10px;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+
+  margin-right: 40px;
+}
+
+label {
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+input {
+  border: none;
+  border-bottom: 1.5px solid black;
+
+  padding: 5px;
+
+  background: transparent;
+}
+
+input::placeholder {
+  color: rgba(137, 43, 226, 0.623);
+}
+
+input::-webkit-input-placeholder, input::-webkit-datetime-edit {
+  color: rgba(137, 43, 226, 0.623);  
+}
+
+input::-moz-placeholder {
+  color: rgba(137, 43, 226, 0.623);  
+}
+
+input:focus {
+  outline: none;
+  border-bottom: 1.5px solid blueviolet;
+}
+
+button.senhas {
+  border: 1px solid blueviolet;
+  color: rgba(137, 43, 226, 0.623);
+  border-radius: 10px;
+  transform: scale(0.8);  
+}
+
+/* ::-webkit-datetime-edit-fields-wrapper { background: silver; }
+::-webkit-datetime-edit-text { color: red; padding: 0 0.3em; }
+::-webkit-datetime-edit-month-field { color: blue; }
+::-webkit-datetime-edit-day-field { color: green; }
+::-webkit-datetime-edit-year-field { color: purple; }
+::-webkit-inner-spin-button { display: none; }
+::-webkit-calendar-picker-indicator { background: orange; } */
