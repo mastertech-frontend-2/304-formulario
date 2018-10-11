@@ -96,10 +96,25 @@ button.senhas {
   transform: scale(0.8);  
 }
 
-/* ::-webkit-datetime-edit-fields-wrapper { background: silver; }
+/* Você pode editar individualmente os elementos do Date Picker. Lembrando que tudo usa -webkit, então não funcionará em qualquer navegador!
+
+Edita somente o fundo do texto:
+::-webkit-datetime-edit-fields-wrapper { background: silver; }
+
+Edita somente o texto:
 ::-webkit-datetime-edit-text { color: red; padding: 0 0.3em; }
+
+Edita somente a área de mês do texto:
 ::-webkit-datetime-edit-month-field { color: blue; }
+
+Edita somente a área de dia do texto:
 ::-webkit-datetime-edit-day-field { color: green; }
+
+Edita somente a área de ano do texto:
 ::-webkit-datetime-edit-year-field { color: purple; }
+
+Edita somente o botão de spin do DatePicker (botão com seta para cima e para baixo juntas):
 ::-webkit-inner-spin-button { display: none; }
+
+Edita somente o botão do DatePicker (botão somente com a seta para baixo):
 ::-webkit-calendar-picker-indicator { background: orange; } */
