@@ -37,6 +37,11 @@ const esconderSenhas = () => {
   event.target.style.backgroundColor = '';
 }
 
+const validarCPF = () => {
+  //Precisa ter os 11 dígitos, se não já está errado
+  //A soma de todos os números do CPF tem que dar 44, 55 ou 66
+}
+
 for (const input of senhas) {
   input.onblur = validarSenha;
   input.onchange = resetSenha;
