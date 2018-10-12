@@ -117,6 +117,12 @@ button.senhas {
   width: 50%;
 }
 
+.erro-senha {
+  visibility: hidden;
+  color: red;
+  margin: 0;
+}
+
 /* Você pode editar individualmente os elementos do Date Picker. Lembrando que tudo usa -webkit, então não funcionará em qualquer navegador!
 
 Edita somente o fundo do texto:

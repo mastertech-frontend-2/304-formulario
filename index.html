@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
   <title>Formulário</title>
 </head>
 
@@ -51,6 +52,7 @@
         <div class="campo">
           <label for="">Escolha uma senha:</label>
           <input type="password" placeholder="Digite sua senha" name="senha">
+          <p class="erro-senha">As senhas não coincidem!</p>
         </div>
         <div class="campo">
           <label for="">Repita sua senha:</label>
@@ -67,11 +69,11 @@
       <div class="linha preferencias">
         <label for="">Você tem um carro atualmente?</label>
         <div class="radio">
-          <input type="radio" name="possuiCarro">
+          <input type="radio" name="possuiCarro" value="true" checked>
           <span>Sim</span>
         </div>
         <div class="radio">
-          <input type="radio" name="possuiCarro">
+          <input type="radio" name="possuiCarro" value="false">
           <span>Não</span>
         </div>
       </div>
@@ -79,11 +81,11 @@
       <div class="linha preferencias">
         <label for="">Pretende comprar um carro em breve?</label>
         <div class="radio">
-          <input type="radio" name="comprarCarro">
+          <input type="radio" name="comprarCarro" value="true" checked>
           <span>Sim</span>
         </div>
         <div class="radio">
-          <input type="radio" name="comprarCarro">
+          <input type="radio" name="comprarCarro" value="false">
           <span>Não</span>
         </div>
       </div>
@@ -92,27 +94,27 @@
         <label for="">Quais dos seguintes itens você considera essenciais em um carro?</label>
         <div>
           <div class="check">
-            <input type="checkbox" name="direcao">
+            <input type="checkbox" name="direcao" value="direcao">
             <label for="">Direção hidráulica</label>
           </div>
           <div class="check">
-            <input type="checkbox" name="trio">
+            <input type="checkbox" name="trio" value="trio">
             <label for="">Trio elétrico</label>
           </div>
           <div class="check">
-            <input type="checkbox" name="cambio">
+            <input type="checkbox" name="cambio" value="cambio">
             <label for="">Câmbio automático</label>
           </div>
           <div class="check">
-            <input type="checkbox" name="teto">
+            <input type="checkbox" name="teto" value="teto">
             <label for="">Teto solar</label>
           </div>
           <div class="check">
-            <input type="checkbox" name="ar">
+            <input type="checkbox" name="ar" value="ar">
             <label for="">Ar condicionado</label>
           </div>
           <div class="check">
-            <input type="checkbox" name="multimidia">
+            <input type="checkbox" name="multimidia" value="multimidia">
             <label for="">Central multimídia</label>
           </div>
         </div>
@@ -120,12 +122,12 @@
 
       <div class="linha preferencias">
         <label for="">Você considera que o seguro automotivo é:</label>
-        <select>
+        <select name="seguro">
           <option value="">Escolha...</option>
-          <option value="">desnecessário</option>
-          <option value="">necessário às vezes.</option>
-          <option value="">necessário quase sempre.</option>
-          <option value="">essencial.</option>
+          <option value="0">desnecessário</option>
+          <option value="1">necessário às vezes.</option>
+          <option value="2">necessário quase sempre.</option>
+          <option value="3">essencial.</option>
         </select>
       </div>
 
@@ -133,13 +135,13 @@
         <label for="">Em relação ao seguro, você prefere pagar mais barato:</label>
         <div>
           <span>na franquia</span>
-          <input type="radio" name="barato">
-          <input type="radio" name="barato">
-          <input type="radio" name="barato">
-          <input type="radio" name="barato">
-          <input type="radio" name="barato">
-          <input type="radio" name="barato">
-          <input type="radio" name="barato">
+          <input type="radio" name="barato" value="0">
+          <input type="radio" name="barato" value="1">
+          <input type="radio" name="barato" value="2">
+          <input type="radio" name="barato" value="3" checked>
+          <input type="radio" name="barato" value="4">
+          <input type="radio" name="barato" value="5">
+          <input type="radio" name="barato" value="6">
           <!-- Também existe um slider padrão no HTML: -->
           <!-- <input type="range" min="1" max="100" value="50"> -->
           <span>na anuidade</span>
