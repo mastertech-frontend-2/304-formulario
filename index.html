@@ -20,41 +20,41 @@
       <div class="linha">
         <div class="campo">
           <label for="">Qual o nome pelo qual gostaria de ser chamado?</label>
-          <input type="text" placeholder="Digite seu nome">
+          <input type="text" placeholder="Digite seu nome" name="nome">
         </div>
         <div class="campo">
           <label for="">Data de Nascimento</label>
-          <input type="date">
+          <input type="date" name="nascimento">
         </div>
       </div>
       <div class="linha">
         <div class="campo">
           <label for="">Onde você mora? (Não vamos atrás de você, fique tranquilo)</label>
-          <input type="text" placeholder="Digite seu endereço completo">
+          <input type="text" placeholder="Digite seu endereço completo" name="endereco">
         </div>
       </div>
       <div class="linha">
         <div class="campo">
           <label for="">Informe seu CPF (somente números):</label>
-          <input type="number" placeholder="12345678912">
+          <input type="number" placeholder="12345678912" name="cpf">
         </div>
         <div class="campo">
           <label for="">Telefone para contato (somente números):</label>
-          <input type="tel" placeholder="12345689">
+          <input type="tel" placeholder="12345689" name="telefone">
         </div>
         <div class="campo">
           <label for="">Para qual email podemos enviar os SPAMs?</label>
-          <input type="email" placeholder="Digite seu email">
+          <input type="email" placeholder="Digite seu email" name="email">
         </div>
       </div>
       <div class="linha">
         <div class="campo">
           <label for="">Escolha uma senha:</label>
-          <input type="password" placeholder="Digite sua senha">
+          <input type="password" placeholder="Digite sua senha" name="senha">
         </div>
         <div class="campo">
           <label for="">Repita sua senha:</label>
-          <input type="password" placeholder="Confirme sua senha">
+          <input type="password" placeholder="Confirme sua senha" name="confirmacaoSenha">
         </div>
 
         <button class="senhas">Ver senhas</button>
@@ -67,11 +67,11 @@
       <div class="linha preferencias">
         <label for="">Você tem um carro atualmente?</label>
         <div class="radio">
-          <input type="radio">
+          <input type="radio" name="possuiCarro">
           <span>Sim</span>
         </div>
         <div class="radio">
-          <input type="radio">
+          <input type="radio" name="possuiCarro">
           <span>Não</span>
         </div>
       </div>
@@ -79,11 +79,11 @@
       <div class="linha preferencias">
         <label for="">Pretende comprar um carro em breve?</label>
         <div class="radio">
-          <input type="radio">
+          <input type="radio" name="comprarCarro">
           <span>Sim</span>
         </div>
         <div class="radio">
-          <input type="radio">
+          <input type="radio" name="comprarCarro">
           <span>Não</span>
         </div>
       </div>
@@ -92,27 +92,27 @@
         <label for="">Quais dos seguintes itens você considera essenciais em um carro?</label>
         <div>
           <div class="check">
-            <input type="checkbox">
+            <input type="checkbox" name="direcao">
             <label for="">Direção hidráulica</label>
           </div>
           <div class="check">
-            <input type="checkbox">
+            <input type="checkbox" name="trio">
             <label for="">Trio elétrico</label>
           </div>
           <div class="check">
-            <input type="checkbox">
+            <input type="checkbox" name="cambio">
             <label for="">Câmbio automático</label>
           </div>
           <div class="check">
-            <input type="checkbox">
+            <input type="checkbox" name="teto">
             <label for="">Teto solar</label>
           </div>
           <div class="check">
-            <input type="checkbox">
+            <input type="checkbox" name="ar">
             <label for="">Ar condicionado</label>
           </div>
           <div class="check">
-            <input type="checkbox">
+            <input type="checkbox" name="multimidia">
             <label for="">Central multimídia</label>
           </div>
         </div>
@@ -133,13 +133,13 @@
         <label for="">Em relação ao seguro, você prefere pagar mais barato:</label>
         <div>
           <span>na franquia</span>
-          <input type="radio">
-          <input type="radio">
-          <input type="radio">
-          <input type="radio">
-          <input type="radio">
-          <input type="radio">
-          <input type="radio">
+          <input type="radio" name="barato">
+          <input type="radio" name="barato">
+          <input type="radio" name="barato">
+          <input type="radio" name="barato">
+          <input type="radio" name="barato">
+          <input type="radio" name="barato">
+          <input type="radio" name="barato">
           <!-- Também existe um slider padrão no HTML: -->
           <!-- <input type="range" min="1" max="100" value="50"> -->
           <span>na anuidade</span>
