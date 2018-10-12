@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
   <link rel="stylesheet" href="style.css">
   <title>Formulário</title>
 </head>
+
 <body>
   <header>
     <h1>Cadastro para SPAM da Loja de Usados do Bafo, o Honesto</h1>
@@ -62,8 +64,89 @@
     <section>
       <h2>Preferências automotivas</h2>
 
-      
+      <div class="linha preferencias">
+        <label for="">Você tem um carro atualmente?</label>
+        <div class="radio">
+          <input type="radio">
+          <span>Sim</span>
+        </div>
+        <div class="radio">
+          <input type="radio">
+          <span>Não</span>
+        </div>
+      </div>
+
+      <div class="linha preferencias">
+        <label for="">Pretende comprar um carro em breve?</label>
+        <div class="radio">
+          <input type="radio">
+          <span>Sim</span>
+        </div>
+        <div class="radio">
+          <input type="radio">
+          <span>Não</span>
+        </div>
+      </div>
+
+      <div class="linha preferencias checks">
+        <label for="">Quais dos seguintes itens você considera essenciais em um carro?</label>
+        <div>
+          <div class="check">
+            <input type="checkbox">
+            <label for="">Direção hidráulica</label>
+          </div>
+          <div class="check">
+            <input type="checkbox">
+            <label for="">Trio elétrico</label>
+          </div>
+          <div class="check">
+            <input type="checkbox">
+            <label for="">Câmbio automático</label>
+          </div>
+          <div class="check">
+            <input type="checkbox">
+            <label for="">Teto solar</label>
+          </div>
+          <div class="check">
+            <input type="checkbox">
+            <label for="">Ar condicionado</label>
+          </div>
+          <div class="check">
+            <input type="checkbox">
+            <label for="">Central multimídia</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="linha preferencias">
+        <label for="">Você considera que o seguro automotivo é:</label>
+        <select>
+          <option value="">Escolha...</option>
+          <option value="">desnecessário</option>
+          <option value="">necessário às vezes.</option>
+          <option value="">necessário quase sempre.</option>
+          <option value="">essencial.</option>
+        </select>
+      </div>
+
+      <div class="linha preferencias">
+        <label for="">Em relação ao seguro, você prefere pagar mais barato:</label>
+        <div>
+          <span>na franquia</span>
+          <input type="radio">
+          <input type="radio">
+          <input type="radio">
+          <input type="radio">
+          <input type="radio">
+          <input type="radio">
+          <input type="radio">
+          <!-- Também existe um slider padrão no HTML: -->
+          <!-- <input type="range" min="1" max="100" value="50"> -->
+          <span>na anuidade</span>
+        </div>
+      </div>
     </section>
   </form>
 </body>
+
 </html>
