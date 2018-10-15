@@ -1,5 +1,6 @@
 const senhas = document.querySelectorAll('input[type=password]');
 const botaoVerSenhas = document.querySelector('button.senhas');
+const inputCpf = document.querySelector('input[name=cpf]');
 
 const validarSenha = () => {
   if (senhas[0].value && senhas[1].value) {
@@ -38,8 +39,24 @@ const esconderSenhas = () => {
 }
 
 const validarCPF = () => {
-  //Precisa ter os 11 dígitos, se não já está errado
-  //A soma de todos os números do CPF tem que dar 44, 55 ou 66
+  if(inputCpf.value.length !== 11){
+    document.querySelector('.erro-cpf').style.visibility = 'visible';
+    return;
+  }
+
+  let numeros = inputCpf.value.split('');
+  let total = 0;
+
+  for(let numero of numeros){
+    total += Number(numero);
+  }
+
+  if(total != 33 && total != 44 && total != 55 && total != 66){
+    document.querySelector('.erro-cpf').style.visibility = 'visible';
+    return;
+  }
+
+  document.querySelector('.erro-cpf').style.visibility = 'hidden';
 }
 
 for (const input of senhas) {
@@ -49,3 +66,4 @@ for (const input of senhas) {
 
 botaoVerSenhas.onmousedown = mostrarSenhas;
 botaoVerSenhas.onmouseup = esconderSenhas;
+inputCpf.onblur = validarCPF;

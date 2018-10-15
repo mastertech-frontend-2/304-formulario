@@ -117,7 +117,7 @@ button.senhas {
   width: 50%;
 }
 
-.erro-senha {
+.erro-senha, .erro-cpf {
   visibility: hidden;
   color: red;
   margin: 0;
